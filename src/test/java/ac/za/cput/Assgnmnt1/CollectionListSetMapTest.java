@@ -3,6 +3,7 @@ package ac.za.cput.Assgnmnt1;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.lang.reflect.Array;
 import java.util.*;
 
 import static org.junit.Assert.*;
@@ -48,9 +49,9 @@ public class CollectionListSetMapTest {
     @Test
     public void myCollection() {
         Collection exCol =CollectionListSetMap.myCollection();
-
-
-        Assert.assertEquals("",exCol);
+        String [] arArray = {"0.1 M.Lethu", "2 M.Thimna", "25 M.Lungisa", "28 M.Masintle", "31 M.Masxole", "39 M.Zola", "41 M.Ma'am", "44 M.Father"};
+        ArrayList<String> cardsList = new ArrayList<String>(Arrays.asList(arArray));
+        Assert.assertEquals(cardsList,exCol);
     }
 }
 
