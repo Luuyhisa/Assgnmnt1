@@ -17,7 +17,7 @@ public class AppTest
     public void shouldAnswerWithTrue()
     {
         App theBigining = new App();
-            int ans = 3;
+            int ans = 100;
         Assert.assertEquals(ans,theBigining.Ngisa());
     }
 }

@@ -9,7 +9,7 @@ public class App
 
     public int Ngisa(){
 
-        return 3;
+        return 100;
     }
 
 
