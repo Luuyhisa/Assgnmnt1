@@ -28,7 +28,7 @@ public class CollectionListSetMap {
         set.add(mySiblinges[5]);
 
         TreeSet sortedSet = new TreeSet<String>(set);
-        System.out.println(sortedSet);
+        //System.out.println(sortedSet);
         return sortedSet;
     }
 

@@ -3,8 +3,7 @@ package ac.za.cput.Assgnmnt1;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 import static org.junit.Assert.*;
 
@@ -29,21 +28,29 @@ public class CollectionListSetMapTest {
     }
     @Test
     public void mySet() {
-        CollectionListSetMap.MySet();
-        Assert.assertEquals("","");
+        TreeSet myAct =CollectionListSetMap.MySet();
+       // TreeSet myExp= new TreeSet();
+       // String actualString= "[Gugu, Lungisa, Masintle, Thimna]";
+        String[] arrayNames = {"Gugu", "Lungisa", "Masintle", "Thimna"};
+        List<String> list = Arrays.asList(arrayNames);
+        Set<String> exSet = new TreeSet<String>(list);
+
+        Assert.assertEquals(exSet,myAct);
     }
     @Test
     public void myList() {
-        CollectionListSetMap.myList();
-        Assert.assertEquals("","");
+        List actOut = CollectionListSetMap.myList();
+        ArrayList<String> exOut= new ArrayList<>();
+        exOut.add("25 Lungisa");exOut.add("28 Masintle");exOut.add("31 Masxole");exOut.add("2 Thimna");exOut.add("0.1 Lethu");exOut.add("39 Zola");exOut.add("41 Ma'am");exOut.add("44 Father");
+
+        Assert.assertEquals(exOut,actOut);
     }
     @Test
     public void myCollection() {
+        Collection exCol =CollectionListSetMap.myCollection();
 
-        CollectionListSetMap.myCollection();
 
-
-        Assert.assertEquals("","");
+        Assert.assertEquals("",exCol);
     }
 }
 
